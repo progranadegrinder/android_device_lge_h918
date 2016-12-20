@@ -17,7 +17,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/lge/h918/h918-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/ls997/ls997-vendor.mk)
 
 # common v20
 $(call inherit-product, device/lge/v20-common/v20.mk)
@@ -27,7 +27,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sensors/sensor_def_elsa_tmo_us.conf:system/etc/sensors/sensor_def_variable.conf
+    $(LOCAL_PATH)/configs/sensors/sensor_def_elsa_spr_us.conf:system/etc/sensors/sensor_def_variable.conf
 
 # WiFi Calibration
 PRODUCT_COPY_FILES += \
